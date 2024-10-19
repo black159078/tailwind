@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-stone-900">
+
+        <nav class="bg-white p-5 md:flex md:justify-between md:items-center">
+
+            <div class="flex justify-between items-center">
+                <span class="flex items-center space-x-2">
+                    <img src="https://www.pngarts.com/files/3/Logo-PNG-Download-Image.png" class="w-12" alt="logo" /><span>Nero Smart</span>
+                </span>
+
+                <span class="text-2xl cursor-pointer md:hidden mx-4">
+                    <i class="fas fa-bars" onclick="togglemenu(this);"></i>
+                </span>
+            </div>
+
+            <ul class="w-full bg-white absolute left-0 opacity-0 pl-5 py-5 md:w-auto md:opacity-100 md:flex md:static md:pl-0 md:py-0 transitoin-all duration-1000">
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="capitalize text-lg hover:violet-500 transition-all duration-500">Home</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="capitalize text-lg hover:violet-500 transition-all duration-500">News</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="capitalize text-lg hover:violet-500 transition-all duration-500">Pages</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="capitalize text-lg hover:violet-500 transition-all duration-500">About</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="capitalize text-lg hover:violet-500 transition-all duration-500">Contact</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="bg-violet-600 px-6 py-2 text-white hover:bg-indigo-600 transition-all duration-500">Signup</a></li>
+            </ul>
+
+        </nav>
+
+
+        <script type="text/javascript">
+
+            function togglemenu(ele){
+                // console.log(ele);
+                // console.log(ele.className);
+
+                const getul = document.querySelector('ul');
+
+                // Method 1
+                // if(ele.classList.contains('togglemenus')){
+                //     ele.classList.remove('togglemenus');
+                //     getul.classList.add('opacity-100');
+                // }else{
+                //     ele.classList.add('togglemenus');
+                //     getul.classList.remove('opacity-100');
+                // }
+
+                // Method 2
+                ele.classList.contains('togglemenus') ? (ele.classList.remove('togglemenus'),getul.classList.add('opacity-100')) : (ele.classList.add('togglemenus'),getul.classList.remove('opacity-100'))
+
+            }
+
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+
