@@ -9,8 +9,8 @@
 
         <!-- Start Header Section  -->
         <header>
-            <nav>
-                <div>
+            <nav class="container mx-auto p-6">
+                <div class="flex justify-between my-6">
 
                     <!-- icon -->
                     <div class="flex items-center">
@@ -28,7 +28,7 @@
                     </div>
 
                     <!-- burger button -->
-                    <button type="button" id="menu-btn" class="block md:hidden focus:outline-none burger-btn">
+                    <button type="button" id="menu-btn" class="block md:hidden focus:outline-none burger-btn z-50">
                         <span class="line1"></span>
                         <span class="line2"></span>
                         <span class="line3"></span>
@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- burger menu -->
-                 <div id="menu" class="w-full h-full hidden bg-slate-300 text-white uppercase tracking-widest fixed inset-0 z-20 px-6 py-1 opacity-40">
+                 <div id="dropdownmenu" class="w-full h-full hidden bg-slate-300 text-white uppercase tracking-widest fixed inset-0 z-20 px-6 py-1 opacity-40">
                     <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Locations</a></div>
                     <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Equipment</a></div>
                     <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Blog</a></div>
@@ -52,20 +52,20 @@
 
         <!-- Start Banner Section  -->
         <section>
-            <div class="container flex flex-col-reverse md:flex-row mx-auto ">
+            <div class="container flex flex-col-reverse md:flex-row mx-auto p-6">
                 
-                <div class="flex flex-col space-y-10 lg:w-1/2 mt-16">
+                <div class="space-y-10 md:w-1/2 md:mt-16">
                     <h1 class="font-semibold text-center text-lg lg:text-left lg:text-3xl">That's Your The Best Studio!</h1>
-                    <p class="text-gray-500 text-center text-base lg:text-2xl lg:text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p class="max-w-md text-gray-500 text-center text-base lg:text-2xl md:text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                     
-                    <div class="flex justify-center lg:justify-start space-x-4">
+                    <div class="flex justify-center md:justify-start space-x-4">
                         <a href="javascript:void(0);" class="bg-indigo-500 text-white text-sm font-semibold rounded shadow-md border-indigo-500 hover:bg-white hover:text-indigo-500 p-4">Quotation</a>
                         <a href="javascript:void(0);" class="bg-gray-300 text-white text-sm font-semibold rounded shadow-md border-gray-600 hover:bg-white hover:text-indigo-600 p-4">Find Out</a>
                     </div>
 
                 </div>
 
-                <div class="lg:w-1/2 mx-auto">
+                <div class="md:w-1/2 mx-auto mb-5 md:mb-0 md:mx-0">
                     <img src="./img/files/etc/camera.png" class="w-[550px]" alt="camera" />
                 </div>
 
@@ -75,15 +75,21 @@
 
 
         <!-- Start Signup Section  -->
-        <section class="container mx-auto py-20 lg:py-[30px]">
-            <div class="flex flex-wrap justify-between items-center">
-                <div>
-                    <span>Find Your Next Dream Picture</span>
-                    <h2>Get started with our studio</h2>
+        <section class="container bg-blue-600 mx-auto px-8 py-[20px] md:py-[60px]">
+            <div class="flex flex-wrap items-center">
+                
+                <!-- caption -->
+                <div class="w-full md:w-1/2">
+                    <span class="text-base font-medium text-white">Find Your Next Dream Picture</span>
+                    <h2 class="text-3xl font-bold text-white">Get started with our studio</h2>
                 </div>
-                <div class="">
-                    <a href="javascript:void(0);" class="bg-indigo-500 text-white text-sm font-semibold rounded shadow-md border-indigo-500 hover:bg-white hover:text-indigo-500 p-4">Show Me</a>
-                    <a href="javascript:void(0);" class="bg-gray-300 text-white text-sm font-semibold rounded shadow-md border-gray-600 hover:bg-white hover:text-indigo-600 p-4">Signup</a>
+
+                <!-- button -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex md:justify-end">
+                        <a href="javascript:void(0);" class="bg-indigo-500 text-white text-sm font-semibold rounded shadow-md border-indigo-500 hover:bg-white hover:text-indigo-500 p-4 mr-4">Show Me</a>
+                        <a href="javascript:void(0);" class="bg-orange-300 text-white text-sm font-semibold rounded shadow-md border-gray-600 hover:bg-white hover:text-indigo-600 p-4">Signup</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -91,22 +97,154 @@
         
 
         <!-- Start FAQ Section  -->
-        <section>
+        <section class="p-5">
+            <div class="container mx-auto">
+                <div class="w-full">
 
+                    <div class="border-b py-1 group" tabindex="1">
+                        <div class="text-gray-500 cursor-pointer flex justify-between items-center py-3">
+                            <h2 class="group-hover:text-red-500">Photography & Flim Studio ?</h2>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="max-h-0 overflow-hidden group-focus:max-h-screen">
+                            <p class="text-gray-400 text-justify py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b py-1 group" tabindex="2">
+                        <div class="text-gray-500 cursor-pointer flex justify-between items-center py-3">
+                            <h2 class="group-hover:text-red-500">Studio Photography & Videography ?</h2>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="max-h-0 overflow-hidden group-focus:max-h-screen">
+                            <p class="text-gray-400 text-justify py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b py-1 group" tabindex="3">
+                        <div class="text-gray-500 cursor-pointer flex justify-between items-center py-3">
+                            <h2 class="group-hover:text-red-500">Photography/Flim Studio ?</h2>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="max-h-0 overflow-hidden group-focus:max-h-screen">
+                            <p class="text-gray-400 text-justify py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b py-1 group" tabindex="4">
+                        <div class="text-gray-500 cursor-pointer flex justify-between items-center py-3">
+                            <h2 class="group-hover:text-red-500">Luxury Daylight & Flim Studio ?</h2>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="max-h-0 overflow-hidden group-focus:max-h-screen">
+                            <p class="text-gray-400 text-justify py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <!-- End FAQ Section -->
 
 
         <!-- Start Component Section  -->
-        <section>
+        <section class="py-5">
+            <div class="container mx-auto">
+                <div class="flex" style="height:300px;">
 
+                    <div class="md:w-1/2 text-center flex items-center md:text-left px-8 md:px-12">
+                        <div>
+                            <h2 class="text-gray-800 font-semibold md:text-3xl">Build Your New <span class="text-indigo-700">Idea Picture</span></h2>
+                            <p class="text-gray-500 text-sm md:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div class="flex justify-center md:justify-start mt-6">
+                                <a href="javascript:void(0);" class="bg-gray-900 text-gray-300 text-sm font-semibold rounded shadow-md hover:bg-gray-700 p-4 py-3 mx-4">Get Started</a>
+                                <a href="javascript:void(0);" class="bg-gray-300 text-gray-500 text-sm font-semibold rounded shadow-md hover:bg-gray-400 p-4 py-3">Find Out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block md:w-1/2" style="clip-path: polygon(0 100%, 100% 100%, 100% 0, 32% 0%);">
+                        <div class="h-full object-cover" style="background-image:url(https://png.pngtree.com/background/20230412/original/pngtree-nature-forest-sun-ecology-picture-image_2394782.jpg)">
+                            <div class="h-full bg-black opacity-25"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <!-- End Component Section -->
 
+        <!-- Start Service Section -->
+        <section>
+            <div class="container px-6 py-4 mx-auto">
+                <div class="grid gap-6 mb-8 md:grid-cols-4">
+
+                    <div class="bg-white border-2 border-gray-200 rounded-lg shadow flex items-center p-4">
+                        <div class="bg-blue-600 text-white rounded-full p-3 mr-4">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div>
+                            <span class="block text-gray-900 text-sm font-medium mb-3">Transportation</span>
+                            <span class="block text-gray-900 text-sm font-normal">Service For Wedding</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-lg shadow flex items-center p-4">
+                        <div class="bg-blue-600 text-white rounded-full p-3 mr-4">
+                            <i class="fas fa-cash"></i>
+                        </div>
+                        <div>
+                            <span class="block text-gray-900 text-sm font-medium mb-3">Payment</span>
+                            <span class="block text-gray-900 text-sm font-normal">any Kind Of Online Payment</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-lg shadow flex items-center p-4">
+                        <div class="bg-blue-600 text-white rounded-full p-3 mr-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <span class="block text-gray-900 text-sm font-medium mb-3">Cash Back 40%</span>
+                            <span class="block text-gray-900 text-sm font-normal">Service For Wedding</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-lg shadow flex items-center p-4">
+                        <div class="bg-blue-600 text-white rounded-full p-3 mr-4">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div>
+                            <span class="block text-gray-900 text-sm font-medium mb-3">Online Storage</span>
+                            <span class="block text-gray-900 text-sm font-normal">1 Year Cloud Provide</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Service Section -->
+
 
         <!-- Start Footer Section  -->
-        <footer>
-
+        <footer class="bg-black py-8">
+            <div class="container space-y-16 flex flex-col justify-between items-center md:flex-row md:space-y-0 mx-auto">
+                <div class="text-white flex space-x-10">
+                    <a href="javascript:void(0);" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:void(0);" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="javascript:void(0);" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="text-gray-400 font-light space-x-6 space-y-6 flex flex-col justify-between items-center md:flex-row md:space-y-0">
+                    <img src="./img/files/fav/favicon.png" class="w-16" alt="favicon">
+                    <a href="javascript:void(0);" class="uppercase text-sm hover:text-red-600">Locations</a>
+                    <a href="javascript:void(0);" class="uppercase text-sm hover:text-red-600">Equipment</a>
+                    <a href="javascript:void(0);" class="uppercase text-sm hover:text-red-600">Blog</a>
+                    <a href="javascript:void(0);" class="uppercase text-sm hover:text-red-600">FAQ</a>
+                </div>
+            </div>
         </footer>
         <!-- End Footer Section -->
 
